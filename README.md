@@ -32,16 +32,16 @@ How to use :
    Setting display type for how the image should adjust 
    mImageView.setDisplayType( DisplayType.FIT_IF_BIGGER );
    
-   mImageView.setListener(new SwipeListener() {
-
-						@Override
-						public void onSwipeRightToLeft() {
-						  //Perform the action required
-						}
-						
-						@Override
-						public void onSwipeLeftToRight() {
-						  //Perform the action required
-						}
-		}				
+	mImageView.setListener(new SwipeListener() {
+	
+	@Override
+	public void onSwipeRightToLeft() {
+	  //Perform the action required
+	}
+					
+	@Override
+	public void onSwipeLeftToRight() {
+	  //Perform the action required
+	}
+	}				
 
