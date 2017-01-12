@@ -1,20 +1,20 @@
 ImageViewTouch
 ==============
 
-Pinch / dubble tap zoom-in, zoom-out for image view and at the same time handling the swipe events on the same ImageView 
+Pinch / double tap zoom-in, zoom-out for image view and at the same time handling the swipe events on the same ImageView 
 
 
 #How to add library :
 
-- This can be either 
-     used as a library project (project properties->Android->add Library) 
+- You can either 
+     use this as a library project (project properties->Android->add Library) 
   or 
      add ImageViewTouch.jar file from ImageViewTouch->bin to libs folder in your project
      
      
 #How to use :
 
-   You can use ImageViewTouch in your project as below,
+   You can use ImageViewTouch in your project as follows.
    
    
    First create a widget in your layout
@@ -26,11 +26,11 @@ Pinch / dubble tap zoom-in, zoom-out for image view and at the same time handlin
    
    
    
-   Creating instance of ImageViewTouch in your class
+   Then find it from your code
    
    	ImageViewTouch mImageView = (ImageViewTouch) findViewById(R.id.imageViewTouch);
    
-   Setting display type for how the image should adjust 
+   Set how the image should adjusted
    
    	mImageView.setDisplayType( DisplayType.FIT_IF_BIGGER );
    	
@@ -38,14 +38,14 @@ Pinch / dubble tap zoom-in, zoom-out for image view and at the same time handlin
    
 	mImageView.setListener(new SwipeListener() {
 	
-	@Override
-	public void onSwipeRightToLeft() {
-	  //Perform the action required
-	}
+	    @Override
+	    public void onSwipeRightToLeft() {
+	        //Perform the required action
+	    }
 					
-	@Override
-	public void onSwipeLeftToRight() {
-	  //Perform the action required
-	}
+	    @Override
+	    public void onSwipeLeftToRight() {
+	        //Perform the required action
+	    }
 	}				
 
